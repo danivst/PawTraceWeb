@@ -1,6 +1,6 @@
-# Paw Trace
+# PawTrace
 
-**Paw Trace** is a web platform designed to help people find and return lost pets.  
+**PawTrace** is a web platform designed to help people find and return lost pets.  
 The website serves as a connection point between individuals who have lost their animals and those who have found one.  
 Users can easily post information about lost or found pets, browse published listings, and contact each other directly.  
 The goal of the project is to create a caring community where collaboration leads to more happy reunions between owners and their pets.
@@ -9,7 +9,7 @@ The goal of the project is to create a caring community where collaboration lead
 
 ## Project Description
 
-Paw Trace aims to simplify the process of finding lost pets and returning them to their owners.  
+PawTrace aims to simplify the process of finding lost pets and returning them to their owners.  
 It provides an easy-to-use interface for users to share, search, and manage listings for lost or found animals.  
 The platform also includes user profiles, an admin panel, and an interactive map for better visualization.
 
@@ -84,7 +84,7 @@ Administrators can:
 | Backend | Node.js with Express |
 | Database | MySQL |
 | Development Environment | Visual Studio Code |
-| Hosting (example) | Netlify / Render / PlanetScale |
+| Hosting | Render |
 | Maps | Google Maps API |
 
 ---
