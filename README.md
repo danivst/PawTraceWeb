@@ -86,12 +86,3 @@ Administrators can:
 | Development Environment | Visual Studio Code |
 | Hosting | Render |
 | Maps | Google Maps API |
-
----
-
-## Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/username/paw-trace.git
-   cd paw-trace
