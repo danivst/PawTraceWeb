@@ -38,4 +38,19 @@ export class FoundAnimal {
     const [rows] = await db.execute(query, values);
     return rows;
   }
+
+  static async update(id, data) {
+    const [result] = await db.execute(
+      `UPDATE found_animals
+       SET type=?, breed=?, gender=?, color=?, age=?, status=?, location=?, description=?
+       WHERE id=?`,
+      [data.type, data.breed, data.gender, data.color, data.age, data.status, data.location, data.description, id]
+    );
+    return [result];
+  }
+
+  static async delete(id) {
+    const [result] = await db.execute(`DELETE FROM found_animals WHERE id=?`, [id]);
+    return [result];
+  }
 }
