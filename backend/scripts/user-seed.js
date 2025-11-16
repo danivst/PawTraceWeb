@@ -1,4 +1,4 @@
-import { User } from '../models/User.js';
+import { User } from '../models/user.js';
 
 const dummyUsers = [
   { name: 'Alice Smith', email: 'alice@example.com', phone: '1234567890', password: 'password1', role: 'user' },
