@@ -1,10 +1,18 @@
 import express from 'express';
-import { createAnimal, getAnimals } from '../controllers/found-animal-controller.js';
+import {
+  createFoundAnimal,
+  getFoundAnimals,
+  getFoundAnimalById,
+  updateFoundAnimal,
+  deleteFoundAnimal
+} from '../controllers/found-animal-controller.js';
+
 const router = express.Router();
 
-router.post('/', createAnimal);
-router.get('/', getAnimals);
+router.post('/', createFoundAnimal);
+router.get('/', getFoundAnimals);
+router.get('/:id', getFoundAnimalById);
+router.put('/:id', updateFoundAnimal);
+router.delete('/:id', deleteFoundAnimal);
 
 export default router;
-
-

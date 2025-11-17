@@ -1,10 +1,18 @@
 import express from 'express';
-import { createAnimal, getAnimals } from '../controllers/lost-animal-controller.js';
+import {
+  createLostAnimal,
+  getLostAnimals,
+  getLostAnimalById,
+  updateLostAnimal,
+  deleteLostAnimal
+} from '../controllers/lost-animal-controller.js';
+
 const router = express.Router();
 
-router.post('/', createAnimal);
-router.get('/', getAnimals);
+router.post('/', createLostAnimal);
+router.get('/', getLostAnimals);
+router.get('/:id', getLostAnimalById);
+router.put('/:id', updateLostAnimal);
+router.delete('/:id', deleteLostAnimal);
 
 export default router;
-
-

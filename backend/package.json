@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node config/server.js",
+    "dev": "nodemon config/server.js",
     "seedLost": "node scripts/lost-animal-seed.js",
     "seedFound": "node scripts/found-animal-seed.js",
     "seedUser": "node scripts/user-seed.js"

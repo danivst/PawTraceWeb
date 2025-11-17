@@ -19,6 +19,20 @@ export const getLostAnimals = async (req, res) => {
   }
 };
 
+export const getLostAnimalById = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const animals = await LostAnimal.findByFilters({ id });
+    const animal = animals[0];
+
+    if (!animal) return res.status(404).json({ error: 'Animal not found' });
+
+    res.json(animal);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 export const updateLostAnimal = async (req, res) => {
   try {
     const id = req.params.id;
